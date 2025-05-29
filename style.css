@@ -1,14 +1,14 @@
 body {
-  background-color: #eaeaea;
+  background-color: #ffffff; /* white background for high contrast */
+  color: #111111; /* almost black text for readability */
   font-family: "Times New Roman", Times, serif;
-  color: #999;
   padding: 0;
   top: 0 !important;
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #f8f8f8;
+  background-color: #f8f9fa; /* off-white navbar */
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -16,11 +16,11 @@ body {
 .navbar-brand {
   font-size: 22px;
   letter-spacing: 1px;
-  color: #aaa;
+  color: #003366; /* deep blue for brand */
 }
 
 .nav-link {
-  color: #aaa !important;
+  color: #003366 !important; /* deep blue links */
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0 10px;
@@ -29,19 +29,19 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #ccc !important;
+  color: #0055aa !important; /* lighter blue on hover/active */
 }
 
 /* Testimonials Section */
 .testimonials-section {
   padding: 80px 0;
-  background-color: #f0f0f0;
+  background-color: #f8f9fa; /* off-white for testimonials section */
 }
 
 .testimonials-section h2 {
   font-size: 28px;
   letter-spacing: 1px;
-  color: #b0b0b0;
+  color: #003366; /* deep blue heading */
 }
 
 .testimonial-card {
@@ -111,19 +111,19 @@ body {
   margin-bottom: 15px;
   font-size: 15px;
   line-height: 1.5;
-  color: #aaaaaa;
+  color: #222222; /* dark gray for testimonial text */
 }
 
 .testimonial-author {
   font-weight: 600;
   margin-bottom: 2px;
   font-size: 14px;
-  color: #999;
+  color: #003366; /* deep blue for author */
 }
 
 .testimonial-location {
   font-size: 12px;
-  color: #aaa;
+  color: #0055aa; /* lighter blue for location */
   margin-bottom: 0;
 }
 
@@ -151,29 +151,23 @@ body {
 }
 
 /* Form styles */
-.form-control {
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-  background-color: transparent;
-  box-shadow: none;
-  font-size: 16px;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border-color: #888;
-  background-color: inherit;
-}
-
+.form-control,
 .form-select {
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #003366; /* deep blue underline */
   padding: 10px 0;
   background-color: transparent;
+  box-shadow: none;
   font-size: 16px;
+  color: #111111; /* dark text in form fields */
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #0055aa; /* lighter blue on focus */
+  background-color: inherit;
 }
 
 textarea.form-control {
@@ -195,8 +189,16 @@ textarea.form-control {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;
-  color: #b0b0b0;
-  border-color: #d0d0d0;
+  color: #ffffff;
+  background-color: #003366;
+  border-color: #003366;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline-dark:hover {
+  background-color: #0055aa;
+  color: #ffffff;
+  border-color: #0055aa;
 }
 
 /* Form validation styles */
@@ -253,6 +255,7 @@ textarea.form-control {
 }
 
 .footer {
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #003366;
 }
